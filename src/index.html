@@ -8,13 +8,47 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="hero">
         <div class="container">
-            <p class="hero__text">Venha comemorar meu aniversário em 26/06/2024</p>
-        </div>
+            <p class="hero__text">
+                Venha comemorar meu aniversário em <span id="contador"></span>
+            </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Perdizes
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Bebida</b>
+                        traga o que vai tomar
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando</b>
+                        26/06/2024 `as 15hrs
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">
+                    Confirme sua presença
+                </a>
+            </div>
+        </div>       
     </header>
+    <section class="event" >
+        <div class="container" data-aos="fade-down-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Meus 43 estão chegando!</h2>
+                <p class="event__details__description">
+                    Olá amigs!! Como vcs já sabem, há algum tempo atravessei as águas profundas do Cabo da Boa Esperança, e na minha idade cada ano que passa deve ser comemorado, então reserve a tarde do dia 26 e venha me dar uma abraço!
+                </p>
+            </div>
+            <img class="event__image" src="./images/retratoConvite.png" alt="Eu">
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>
